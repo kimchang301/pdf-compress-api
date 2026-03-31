@@ -10,7 +10,7 @@ export default function PDFCompressor() {
   const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
 
   // --- 請確認這裡換成你剛才產生的 Modal 網址 ---
-  const MODAL_API_URL = "https://modal.com/apps/kimchang301/main/deployed/pdf-vibe-compressor/compress";
+  const MODAL_API_URL = "https://kimchang301--pdf-vibe-compressor-fastapi-app.modal.run/compress";
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
